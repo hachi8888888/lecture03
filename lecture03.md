@@ -14,5 +14,11 @@
 
 7. Railsの構成管理ツール名 bundler 2.3.14　＞bin/setup　実行時に確認
 
+
+|  | th中央 | 参考URL |
+| :-- | :-: | --: |
+| sudo service mysql start | td | https://e-words.jp/w/sudo.html#:~:text=sudo%E3%81%A8%E3%81%AF%E3%80%81%E4%B8%BB%E3%81%AB,%E5%A0%B4%E5%90%88%E3%81%AB%E5%88%A9%E7%94%A8%E3%81%95%E3%82%8C%E3%82%8B%E3%80%82 |
+| mysql.server start | td | td |
+
 ## 学んだ事
 - アプリケーションとDBでそれぞれ
