@@ -6,19 +6,23 @@
 ## 調べた事
 1. APサーバーの名　Puma >rails s　実行時に確認
 2. APサーバーのバージョン　5.6.5　
-3. APサーバー終了時の挙動　
+3. APサーバー終了時の挙動
+<img width="1434" alt="APサーバー停止時の挙動 2023-11-25 13 34 57" src="https://github.com/hachi8888888/lecture03/assets/148927545/f92d904f-93c1-4592-8839-a8519f59c722">
 
-4. DBサーバー名　MySQL　＞MySQL　サインイン時に確認
-5. DBサーバーバージョン　8.0.35 for Linux on x86_64 (MySQL Community Server - GPL)
-6.APサーバー終了時の挙動
+5. DBサーバー名　MySQL　＞MySQL　サインイン時に確認
+6. DBサーバーバージョン　8.0.35 for Linux on x86_64 (MySQL Community Server - GPL)
+7. DBサーバー終了時の挙動
+<img width="1434" alt="DBサーバー停止時の挙動 2023-11-25 13 39 12" src="https://github.com/hachi8888888/lecture03/assets/148927545/497c41ed-448c-438e-b928-08564810be56">
 
-7. Railsの構成管理ツール名 bundler 2.3.14　＞bin/setup　実行時に確認
+8. Railsの構成管理ツール名 bundler 2.3.14　＞bin/setup　実行時に確認
 
 
-|  | th中央 | 参考URL |
+|  | 何を使っているのか | 参考URL |
 | :-- | :-: | --: |
-| sudo service mysql start | td | https://e-words.jp/w/sudo.html#:~:text=sudo%E3%81%A8%E3%81%AF%E3%80%81%E4%B8%BB%E3%81%AB,%E5%A0%B4%E5%90%88%E3%81%AB%E5%88%A9%E7%94%A8%E3%81%95%E3%82%8C%E3%82%8B%E3%80%82 |
-| mysql.server start | td | td |
+| sudo service mysql start | 主にUNIX系OSで用いられるコマンドおよびプログラムの一つで、現在ログインしている利用者が別の利用者（特に特権ユーザー）の権限でプログラムを実行するもの。| https://e-words.jp/w/sudo.html#:~:text=sudo%E3%81%A8%E3%81%AF%E3%80%81%E4%B8%BB%E3%81%AB,%E5%A0%B4%E5%90%88%E3%81%AB%E5%88%A9%E7%94%A8%E3%81%95%E3%82%8C%E3%82%8B%E3%80%82 |
+| mysql.server start | リレーショナルデータベース（RDB）の作成や管理、データの書き込みや読み込みなどを行うためのソフトウェア| https://e-words.jp/w/MySQL.html　|
 
 ## 学んだ事
-- アプリケーションとDBでそれぞれ
+- APとDBでそれぞれサーバーがあって、両方が稼働していないとアプリケーションは動かない事が分かった。
+- アプリケーションを動かすにあたり、色んな言語(?)を扱うし、各々のバージョンを揃える必要があるので大変。でもちゃんとエラーで示してくれるので賢い。
+- エラーが出る原因について調べたら、どういった対処ができるのか判断するためにはそれぞれのコンテンツ(?)を動かすにあたりどういう要素が必要なのかを把握しておく必要がある。今は親切な人のまとめサイトに頼りっきりだけど、いつかは自分の頭の中で原因の候補を出せるようになりたい。
